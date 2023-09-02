@@ -32,7 +32,7 @@ For those who are familiar with python coding and packages, a PyQt6 Main Window 
 - Launch the EventLoop for the QApplication()
 
 ## Detailed explanation    
-Checkout the [Github Wiki](https://github.com/poivronjaune/PyQt6MainWindow/wiki) for detailed explanations with step by step learning. We also discuss some basic object-oriented principles.  
+Checkout the [Github Wiki](https://github.com/poivronjaune/PyQt6-MainWindow/wiki) for detailed explanations with step by step learning. We also discuss some basic object-oriented principles.  
 
 We hope you enjoy our presentation!
 
