@@ -8,7 +8,7 @@ class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.setWindowTitle('Editor')
+        self.setWindowTitle('New Title For Our Window')
         self.setGeometry(100, 100, 500, 300)
         #self.showMaximized()    
 
