@@ -7,7 +7,7 @@ The basic Main Window Application can be found in the ***app.py*** script.
 
 ## Installation  
 
-Clone this project on your environment and run for Windows system (linux use source bin/activate instead of .env\Scripts\Activate)  
+Clone this project on your windows environment and run  
 
 > git clone git@github.com:poivronjaune/PyQt6-MainWindow.git  
 > cd PyQt6-MainWindow  
@@ -20,10 +20,11 @@ Clone this project on your environment and run for Windows system (linux use sou
 >
 > python app.py  
 
+On linux use source bin/activate instead of .env\Scripts\Activate
 
 ## Basic usage  
-For those who are familiar with python coding and packages, a Main Window application we require the following steps
-Step 0 : Create a QApplication with the event loop that manages events, widgets and user interaction  
+For those who are familiar with python coding and packages, a PyQt6 Main Window application requires the following to be done:  
+- Create a QApplication with the event loop that manages events, widgets and user interaction  
 - Create a QMainWindow object on which to add other components  
 - Create QActions with icons, text and connect callback methods to each  
 - Attach a menuBar() to the QMainWindow and addActions() to this menuBar  
@@ -31,7 +32,7 @@ Step 0 : Create a QApplication with the event loop that manages events, widgets 
 - Launch the EventLoop for the QApplication()
 
 ## Detailed explanation    
-Checkout the [Github Wiki](https://github.com/poivronjaune/PyQt6MainWindow/wiki) for detailed explanations with step by step learning of each steps. We also discuss some basic object-oriented principles.  
+Checkout the [Github Wiki](https://github.com/poivronjaune/PyQt6MainWindow/wiki) for detailed explanations with step by step learning. We also discuss some basic object-oriented principles.  
 
 We hope you enjoy our presentation!
 
