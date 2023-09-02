@@ -1,0 +1,29 @@
+import os
+import sys
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QGridLayout, QLabel, QMenuBar, QToolBar, QStyle
+from PyQt6.QtGui import QIcon, QAction
+
+class MainWindow(QMainWindow):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.setWindowTitle('Editor')
+        self.setGeometry(100, 100, 500, 300)
+        #self.showMaximized()    
+
+
+def main():
+    app = QApplication(sys.argv)
+    
+    main_win = MainWindow()
+    main_win.show()
+
+    try:
+        sys.exit(app.exec())
+    except SystemExit:
+        print('Closing PyQt6 Main Window...')   
+
+
+if __name__ == "__main__":
+    main()

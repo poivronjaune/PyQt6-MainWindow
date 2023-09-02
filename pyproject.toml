@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pkg"]
+namespaces = false
+
+[project]
+name = "PyQt6MainWindow"
+version = "0.1.0"
+authors = [
+    {name = "PoivronJaune"},
+]
+description = "PyQt6 Main window boiler plate with menu, toolbar and central widget"
+requires-python = ">=3.10"
+dependencies = [
+    "pyqt6"
+]
