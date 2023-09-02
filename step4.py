@@ -8,14 +8,23 @@ class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.setWindowTitle('New Title For Our Window')
-        self.setGeometry(100, 100, 500, 300)
-        #self.showMaximized()    
+        self.setWindowTitle('Editor')
+        self.setGeometry(100, 100, 300, 200)
+        #self.showMaximized()
 
-        action1 = QAction('Exit', self)
-        action1.triggered.connect(self.close)
-        self.menuBar().addAction(action1)
+        self._define_actions()
+        self._create_top_menu()
 
+    def _define_actions(self):
+        self.action1 = QAction('Menu One')
+        self.action1.triggered.connect(self.do_action1)
+
+    def _create_top_menu(self):
+        top_menu = self.menuBar()   
+        top_menu.addAction(self.action1)
+
+    def do_action1(self):
+        print('Menu One pressed...')
 
 def main():
     app = QApplication(sys.argv)
